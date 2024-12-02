@@ -2,7 +2,7 @@ import csv
 import math
 
 
-def calculate_entropy(csv_str: str) -> float:
+def task(csv_str: str) -> float:
 
     lines = csv_str.strip().split('\n')
     reader = csv.reader(lines)
@@ -29,5 +29,5 @@ if __name__ == "__main__":
                    0,1,0,2,1
                    0,1,0,2,1"""
 
-    result = calculate_entropy(csv_input)
+    result = task(csv_input)
     print(f"Энтропия: {result}")
